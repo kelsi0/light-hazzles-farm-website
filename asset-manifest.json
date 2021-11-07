@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/light-hazzles-farm-website/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/light-hazzles-farm-website/static/js/main.2103d7e4.chunk.js",
+    "main.js.map": "/light-hazzles-farm-website/static/js/main.2103d7e4.chunk.js.map",
+    "runtime-main.js": "/light-hazzles-farm-website/static/js/runtime-main.954ffdf1.js",
+    "runtime-main.js.map": "/light-hazzles-farm-website/static/js/runtime-main.954ffdf1.js.map",
+    "static/js/2.7275d4bb.chunk.js": "/light-hazzles-farm-website/static/js/2.7275d4bb.chunk.js",
+    "static/js/2.7275d4bb.chunk.js.map": "/light-hazzles-farm-website/static/js/2.7275d4bb.chunk.js.map",
+    "static/js/3.0e5a58c2.chunk.js": "/light-hazzles-farm-website/static/js/3.0e5a58c2.chunk.js",
+    "static/js/3.0e5a58c2.chunk.js.map": "/light-hazzles-farm-website/static/js/3.0e5a58c2.chunk.js.map",
+    "index.html": "/light-hazzles-farm-website/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/light-hazzles-farm-website/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.7275d4bb.chunk.js.LICENSE.txt": "/light-hazzles-farm-website/static/js/2.7275d4bb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.954ffdf1.js",
+    "static/js/2.7275d4bb.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.2103d7e4.chunk.js"
+  ]
+}
