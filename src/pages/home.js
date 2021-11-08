@@ -24,117 +24,65 @@ class Home extends Component {
                     <div className="col-lg-8 text-center">
                         <h2 className="text-white mt-0">We've got what you need!</h2>
                         <hr className="divider divider-light" />
-                        <p className="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+                        <ul className="text-white-75 mb-4">
+                            <li className="pb-1">Friendly family run yard</li>
+                            <li className="pb-1">Light and airy American style barn stables</li>
+                            <li className="pb-1">60 X 40 flood light ménage</li>
+                            <li className="pb-1">Morning feeds on request</li>
+                            <li className="pb-1">All year turnout, 24/7 from May to end of October</li>
+                            <li className="pb-1">Open 24 hours / 7 Days a week & Secure access gate system</li>
+                            <li className="pb-1">Hay / Haylage supplied on site</li>
+                            <li className="pb-1">Straw / Pellets for Bedding supplied on site</li>
+                            <li className="pb-1">Own Instructor, Farrier, Dentist & Vets welcome</li>
+                            <li className="pb-1">Plenty of off-road hacking</li>
+                            <li className="pb-1">Trailer parking & Toilet facilities</li>
+                            <li className="pb-1">Extra container storage available on request</li>
+                        </ul>
                         <a className="btn btn-light btn-xl" href="#services">Get Started!</a>
                     </div>
                 </div>
             </div>
         </section>
-        {/* <!-- Services--> */}
-        <section className="page-section" id="services">
-            <div className="container px-4 px-lg-5">
-                <h2 className="text-center mt-0">At Your Service</h2>
-                <hr className="divider" />
-                <div className="row gx-4 gx-lg-5">
-                    <div className="col-lg-3 col-md-6 text-center">
-                        <div className="mt-5">
-                            <div className="mb-2"><i className="bi-gem fs-1 text-primary"></i></div>
-                            <h3 className="h4 mb-2">Sturdy Themes</h3>
-                            <p className="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 text-center">
-                        <div className="mt-5">
-                            <div className="mb-2"><i className="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 className="h4 mb-2">Up to Date</h3>
-                            <p className="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 text-center">
-                        <div className="mt-5">
-                            <div className="mb-2"><i className="bi-globe fs-1 text-primary"></i></div>
-                            <h3 className="h4 mb-2">Ready to Publish</h3>
-                            <p className="text-muted mb-0">You can use this design as is, or you can make changes!</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 text-center">
-                        <div className="mt-5">
-                            <div className="mb-2"><i className="bi-heart fs-1 text-primary"></i></div>
-                            <h3 className="h4 mb-2">Made with Love</h3>
-                            <p className="text-muted mb-0">Is it really open source if it's not made with love?</p>
-                        </div>
-                    </div>
-                </div>
+        {/* <!-- Gallery --> */}
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img
+                src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.15752-9/247975905_4389372621099472_4701503517392322368_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_ohc=UQaiwEri2zAAX_0zxgY&_nc_ht=scontent-lhr8-1.xx&oh=575c8a0803b1f83c2dc062c7d11f0547&oe=61AE837A"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+                />
+                <img
+                src="https://scontent-lhr8-2.xx.fbcdn.net/v/t1.15752-9/245908735_581542683093699_7489246674214791225_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_ohc=pz86DuVjrB4AX8ZsCpb&_nc_ht=scontent-lhr8-2.xx&oh=a6f124d7d2b35df04cf8bc5c5f0c0bf2&oe=61B0B72E"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+                />
             </div>
-        </section>
-        {/* <!-- Portfolio--> */}
-        <div id="portfolio">
-            <div className="container-fluid p-0">
-                <div className="row g-0">
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                            <img className="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img className="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                            <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img className="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
-                            <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img className="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
-                            <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img className="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
-                            <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img className="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                            <div className="portfolio-box-caption p-3">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                src="https://scontent-lhr8-2.xx.fbcdn.net/v/t1.15752-9/247401417_3986649801435542_6895063839277993783_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=ae9488&_nc_ohc=bCGaDXrXN7sAX_vzT-p&_nc_ht=scontent-lhr8-2.xx&oh=25cdb26012e03f2cd17542fe73c3ad2a&oe=61AFB531"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+                />
+                <img
+                src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.15752-9/241202370_387596142893784_563153949974267922_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_ohc=IuboO1gkHlEAX-HE7wC&_nc_ht=scontent-lhr8-1.xx&oh=ea8fa2024abbb05b723c0ac90e2cce3e&oe=618AC14D"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+                />
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.15752-9/247471700_419478576209978_1407192363813738927_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=cbOi36czBZcAX_zuJP2&_nc_ht=scontent-lhr8-1.xx&oh=457920bf08d756e7f7260a0600e4e3a4&oe=61AFB5E9"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+                />
+                <img
+                src="https://scontent-lhr8-2.xx.fbcdn.net/v/t1.15752-9/246423847_571545254073864_1083614776768047464_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=ae9488&_nc_ohc=rpIQE-ej_3IAX-U5Ha2&_nc_ht=scontent-lhr8-2.xx&oh=7b37bf50b4e8778c26c2905bc0b0456b&oe=61B0E4F9"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+                />
             </div>
         </div>
-        {/* <!-- Call to action--> */}
-        <section className="page-section bg-dark text-white">
-            <div className="container px-4 px-lg-5 text-center">
-                <h2 className="mb-4">Free Download at Start Bootstrap!</h2>
-                <a className="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
-            </div>
-        </section>
+        {/* <!-- Gallery --> */}
         {/* <!-- Contact--> */}
         <section className="page-section" id="contact">
             <div className="container px-4 px-lg-5">
