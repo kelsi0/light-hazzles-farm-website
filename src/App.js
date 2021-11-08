@@ -6,7 +6,7 @@ function App() {
       <div className="wrapper">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/light-hazzles-farm-website" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>
