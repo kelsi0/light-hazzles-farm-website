@@ -1,48 +1,73 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+const query = `
+{ 
+  servicesPageGalleryCollection {
+    items {
+      title,
+      imagesCollection {
+        items {
+          url,
+          fileName,
+          description
+        }
+      }
+    }
+  }
+}
+`
 
 const Services = () => {
+    const [gallery, setGallery] = useState(null);
+    const imageArray = gallery && gallery.imagesCollection.items;
+
+    useEffect(() => {
+        window
+          .fetch(`https://graphql.contentful.com/content/v1/spaces/7887wddr37w2/`, {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/json",
+                  // Authenticate the request
+                  Authorization: "Bearer LmZDTST19shp7--Qsa0kqcC60GXMeNauWBAWo3FuDYY",
+              },
+              // send the GraphQL query
+              body: JSON.stringify({ query }),
+          })
+          .then((response) => response.json())
+          .then(({ data, errors }) => {
+              if (errors) {
+                  console.error(errors);
+              }
+
+              // rerender the entire component with new data
+              setGallery(data.servicesPageGalleryCollection.items[0]);
+          });
+    }, []);
+
+    if (!gallery) {
+        return null;
+    }
+
     return (
         <section>
             <h1 className="container py-3">Menage</h1>
             <div className="album py-5 bg-light">
                 <div className="container">
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div className="col">
-                            <div className="card shadow-sm">
-                                <img
-                                  src="https://lighthazzlesfarm.co.uk/wp-content/uploads/2020/11/DJI_0016-scaled.jpg"
-                                  className="w-100 shadow-1-strong rounded mb-4"
-                                  alt=""
-                                />
-                                <div className="card-body">
-                                    <p className="card-text">The ménage is filled with Silica Sand & Fibre, it's 60′ x 140′ which is approx. 20m x 40m for us metric people,</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card shadow-sm">
-                                <img
-                                  src="https://lighthazzlesfarm.co.uk/wp-content/uploads/2020/11/DJI_0149resize.jpg"
-                                  className="w-100 shadow-1-strong rounded mb-4"
-                                  alt=""
-                                />
-                                <div className="card-body">
-                                    <p className="card-text">Your welcome to use our school day or night and just to make sure we’ve added 10 super bright L.E.D. Flood lights so you can see were your going</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card shadow-sm">
-                                <img
-                                  src="https://lighthazzlesfarm.co.uk/wp-content/uploads/2020/11/DJI_0024.jpg"
-                                  className="w-100 shadow-1-strong rounded mb-4"
-                                  alt=""
-                                />
-                                <div className="card-body">
-                                    <p className="card-text">Our Ménage is well drained and is still usable in the worst of the British weather!</p>
-                                </div>
-                            </div>
-                        </div>
+                        {imageArray && imageArray.map((image) => (
+                          <div className="col">
+                              <div className="card shadow-sm">
+                                  <img
+                                    src={ image.url }
+                                    className="w-100 shadow-1-strong rounded mb-4"
+                                    alt={ image.fileName }
+                                  />
+                                  <div className="card-body">
+                                      <p className="card-text">{ image.description }</p>
+                                  </div>
+                              </div>
+                          </div>
+                        ))}
                     </div>
                 </div>
             </div>

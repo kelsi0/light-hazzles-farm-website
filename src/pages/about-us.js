@@ -1,9 +1,12 @@
 import React from "react";
+import Services from "../components/services";
 
 const AboutUs = () => {
     return (
         <div>
+          <hr className="divider bg-black" />
           <h1 className="text-center pt-3">We are located just behind the Summit Pub up Todmorden road in Littleborough</h1>
+          <hr className="divider bg-black" />
             <iframe
               className="pt-2"
               title="map"
@@ -13,6 +16,7 @@ const AboutUs = () => {
               allowFullScreen=""
               loading="lazy">
             </iframe>
+          <Services />
         </div>
     )
 }
