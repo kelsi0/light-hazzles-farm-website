@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
- 
+
 class Header extends Component {
     render() {
         return (
@@ -12,7 +12,7 @@ class Header extends Component {
                         <ul className="navbar-nav ms-auto my-2 my-lg-0">
                             <li className="nav-item"><Link className="nav-link" to="/light-hazzles-farm-website/about-us">About Us</Link></li>
                             <li className="nav-item"><Link className="nav-link" to="/light-hazzles-farm-website/services">Services</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to="/light-hazzles-farm-website/portfolio">Members</Link></li>
+                            <li className="nav-item"><Link className="nav-link" to="/light-hazzles-farm-website/members">Members</Link></li>
                             <li className="nav-item"><Link className="nav-link" to="/light-hazzles-farm-website/contact-us">Contact</Link></li>
                         </ul>
                     </div>
@@ -21,4 +21,4 @@ class Header extends Component {
         )
     }
 }
-export default Header;      
+export default Header;
